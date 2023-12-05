@@ -408,7 +408,7 @@ class TransferChain(ChainBase):
 
         if not directory.exists():
             logger.warn(f"目录不存在：{directory}")
-            return []
+            continue
 
         # 单文件
         if directory.is_file():
